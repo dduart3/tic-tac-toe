@@ -1,0 +1,87 @@
+*{
+    font-family: 'Gobold';
+    font-weight: 700;
+}
+
+.gameboard{
+    display: flex;
+    width: 30vw;
+    height: 50vh;
+    top: 30%;
+    left: 35%;
+    border: solid black;
+}
+
+.gameboard-column{
+    width: 100%;
+    border: solid black;
+}
+
+.gameboard-column__tiles-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: black solid;
+}
+
+.gameboard-column__tile{
+    font-family: 'Gobold';
+    width: 100%;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-bottom: solid black;
+}
+
+.gameboard-column__tile:hover{
+    cursor: pointer;
+    background-color: rgb(174, 238, 243);
+}
+
+.gameboard-container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+
+}
+
+
+.global-container__title{
+    font-family: 'Gobold';
+    font-weight: 600;
+    font-size: 1.7rem;
+    width: 100vw;
+    text-align: center;
+    margin-top: 15vh;
+
+}
+
+.hiden{
+    display: none;
+}
+
+.reset-button{
+    margin-top: 5vh;
+    background-color: rgba(0, 231, 200, 0.685);
+    color: #000;
+    border-color: thistle;
+    border-radius: 15px;
+}
+
+.winner{
+    font-family: 'Gobold';
+    width: 100vw;
+    height: 5vh;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+h1{
+    margin: 0;
+}

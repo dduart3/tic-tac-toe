@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="global-container">
+        <div class="global-container__title">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        
+        <div class="gameboard-container">
+            <div class="winner"></div>
+            <div class="gameboard">
+                <div class="gameboard-column">
+                    <div class="gameboard-column__tiles-container" >
+                    <div class="gameboard-column__tile" data-tile-index="0"></div>
+                    <div class="gameboard-column__tile" data-tile-index="1"></div>
+                    <div class="gameboard-column__tile" data-tile-index="2"></div>
+                    </div>
+                </div>
+
+                <div class="gameboard-column">
+                    <div class="gameboard-column__tiles-container">
+                    <div class="gameboard-column__tile" data-tile-index="3"></div>
+                    <div class="gameboard-column__tile" data-tile-index="4"></div>
+                    <div class="gameboard-column__tile" data-tile-index="5"></div>
+                    </div>
+                </div>
+
+                <div class="gameboard-column">
+                    <div class="gameboard-column__tiles-container">
+                    <div class="gameboard-column__tile" data-tile-index="6"></div>
+                    <div class="gameboard-column__tile" data-tile-index="7"></div>
+                    <div class="gameboard-column__tile" data-tile-index="8"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="reset-button hiden">PLAY AGAIN</button>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
