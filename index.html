@@ -2,52 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Tic Tac Toe</title>
 </head>
 <body>
     <div class="global-container">
-        <header>
-            <h1 class="global-container__title">The Library</h1>
-        </header>
-        <main class="main-section-container">
-            <div class="add-book-container">
+        <div class="global-container__title">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        
+        <div class="gameboard-container">
+            <div class="winner"></div>
+            <div class="gameboard">
+                <div class="gameboard-column">
+                    <div class="gameboard-column__tiles-container" >
+                    <div class="gameboard-column__tile" data-tile-index="0"></div>
+                    <div class="gameboard-column__tile" data-tile-index="1"></div>
+                    <div class="gameboard-column__tile" data-tile-index="2"></div>
+                    </div>
+                </div>
 
-                <div class="add-book-container__title">
-                    <p>Add Book</p>
+                <div class="gameboard-column">
+                    <div class="gameboard-column__tiles-container">
+                    <div class="gameboard-column__tile" data-tile-index="3"></div>
+                    <div class="gameboard-column__tile" data-tile-index="4"></div>
+                    <div class="gameboard-column__tile" data-tile-index="5"></div>
+                    </div>
                 </div>
-                    <form class="form">
-                    <div class="input-container">
-                        <label class="input-container__label" for="add-book-title">Title</label>
-                        <input class= "input-container__input" type="text" id="add-book-title" minlength="2" maxlength="50" required >
+
+                <div class="gameboard-column">
+                    <div class="gameboard-column__tiles-container">
+                    <div class="gameboard-column__tile" data-tile-index="6"></div>
+                    <div class="gameboard-column__tile" data-tile-index="7"></div>
+                    <div class="gameboard-column__tile" data-tile-index="8"></div>
                     </div>
-    
-                    <div class="input-container">
-                        <label class="input-container__label" for="add-book-author">Author</label>
-                        <input class= "input-container__input" type="text" id="add-book-author" required minlength="2" maxlength="50">
-                    </div>
-    
-                    <div class="input-container">
-                        <label class="input-container__label" for="add-book-pages">Pages</label>
-                        <input class= "input-container__input" type="number" min="25" max="15000" id="add-book-pages" required>
-                    </div>
-                    
-                    <div class="input-container">
-                        <label class="input-container__label" for="add-book-read">Read</label>
-                        <input class= "input-container__input" type="checkbox" id="add-book-read" >
-                    </div>
-                    <input class="submit-button" type="submit" value="Add Book">
-                </form>
-            </div>
-            <div class="books-container">
-                <div class="books-container__title">
-                    <p>Books</p>
-                </div>
-                <div class="books-container__content">
                 </div>
             </div>
-        </main>
+            <button class="reset-button hiden">PLAY AGAIN</button>
+        </div>
     </div>
+
+    
     <script src="script.js"></script>
 </body>
 </html>
