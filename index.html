@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+</head>
+<body>
+    <div class="global-container">
+        <header>
+            <h1 class="global-container__title">The Library</h1>
+        </header>
+        <main class="main-section-container">
+            <div class="add-book-container">
+
+                <div class="add-book-container__title">
+                    <p>Add Book</p>
+                </div>
+                    <form class="form">
+                    <div class="input-container">
+                        <label class="input-container__label" for="add-book-title">Title</label>
+                        <input class= "input-container__input" type="text" id="add-book-title" minlength="2" maxlength="50" required >
+                    </div>
+    
+                    <div class="input-container">
+                        <label class="input-container__label" for="add-book-author">Author</label>
+                        <input class= "input-container__input" type="text" id="add-book-author" required minlength="2" maxlength="50">
+                    </div>
+    
+                    <div class="input-container">
+                        <label class="input-container__label" for="add-book-pages">Pages</label>
+                        <input class= "input-container__input" type="number" min="25" max="15000" id="add-book-pages" required>
+                    </div>
+                    
+                    <div class="input-container">
+                        <label class="input-container__label" for="add-book-read">Read</label>
+                        <input class= "input-container__input" type="checkbox" id="add-book-read" >
+                    </div>
+                    <input class="submit-button" type="submit" value="Add Book">
+                </form>
+            </div>
+            <div class="books-container">
+                <div class="books-container__title">
+                    <p>Books</p>
+                </div>
+                <div class="books-container__content">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
