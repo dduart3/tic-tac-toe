@@ -81,6 +81,8 @@ const game = (() =>{
 
   const showResetButton = displayController.showResetButton();
 
+  const removeEventListeners = () => tileElements.map(tile => tile.removeEventListener('click', play));
+
   
   const resetGame = () =>{
     gameBoard.resetTiles();
@@ -117,12 +119,14 @@ const game = (() =>{
     if(winner() !== null ){
       winnerTitleElement.textContent = `The winner is: ${winner()}`;
       showResetButton(true);
+      removeEventListeners();
     }
     
     
     if(winner() === null && !hasMovementsLeft(tiles)){
       winnerTitleElement.textContent = 'The game is tied';
       showResetButton(true);
+      removeEventListeners();
     }
   }
     
