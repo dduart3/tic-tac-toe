@@ -89,6 +89,7 @@ const game = (() =>{
     displayController.resetElementTiles()
     showResetButton(false);
     winnerTitleElement.textContent = "";
+    game.init();
   }
   
   resetButton.addEventListener('click', resetGame);
